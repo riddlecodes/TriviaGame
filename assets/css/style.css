@@ -1,0 +1,14 @@
+body {
+    background-image: url("../../assets/yellowsubmarine.gif");
+    background-repeat: repeat;
+    background-size: 50px;
+}
+
+#quiz {
+    background-color: white;
+    width: 75%;
+}
+
+.jumbotron {
+    font-size: 100px;
+}
