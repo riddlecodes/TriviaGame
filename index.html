@@ -4,85 +4,103 @@
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Trivia Game</title>
+    <title>The Beatles Trivia Game</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css" />
-    <script src="assets/javascript/app.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
         crossorigin="anonymous">
-
 </head>
 
-<body>
+    <body>
+        <div id="main-container">
+            <div id="container">
+                <h1>The Beatles Trivia Game</h1>
+                <h3>(You have 60 seconds after you click "start"!)</h3>
 
-    <div class="jumbotron">Beatles Quiz</div>
+                <br>
+                <br>
 
-    <button id="clock">Click to Start</button>
-<div id="quiz">
-    <form>
-        <div class="question">
-            <p>
-                <strong>Q1</strong>: Which Beatles is the oldest?</p>
-            <label>
-                <input type="radio" name="one" value="a">John Lennon</label>
-            <label>
-                <input type="radio" name="one" value="b">Ringo</label>
-            <label>
-                <input type="radio" name="one" value="c">Mick Jagger</label>
-            <label>
-                <input type="radio" name="one" value="d">George Martin</label>
-        </div>
-        <div class="question">
-            <p>
-                <strong>Q2</strong>: What televison program did The Beatles famously perform on for the first time in 1963?</p>
-            <label>
-                <input type="radio" name="two" value="a">America's Got Talent</label>
-            <label>
-                <input type="radio" name="two" value="b">Dancing with the Stars</label>
-            <label>
-                <input type="radio" name="two" value="c">Star Search</label>
-            <label>
-                <input type="radio" name="two" value="d">The Ed Sullivan Show</label>
-        </div>
-        <div class="question">
-            <p>
-                <strong>Q2</strong>: What was the firs tsong that the Beatles performed live for an audience in America?</p>
-            <label>
-                <input type="radio" name="three" value="a">"I Want to Hold Your Hand"</label>
-            <label>
-                <input type="radio" name="three" value="b">"All My Loving"</label>
-            <label>
-                <input type="radio" name="three" value="c">"Help!"</label>
-            <label>
-                <input type="radio" name="three" value="d">"Can't Buy Me Love"</label>
-        </div>
-        <div class="question">
-            <p>
-                <strong>Q2</strong>: How much did a front row ticket cost to their first concert in America?</p>
-            <label>
-                <input type="radio" name="four" value="a">$4</label>
-            <label>
-                <input type="radio" name="four" value="b">$6</label>
-            <label>
-                <input type="radio" name="four" value="c">$8.50</label>
-            <label>
-                <input type="radio" name="four" value="d">$12.50</label>
-            <div class="question">
-                <p>
-                    <strong>Q2</strong>: Who was the original drummer for the Beatles?
-                    <input type="radio" name="five" value="a">Ringo Starr</label>
-                <label>
-                    <input type="radio" name="five" value="b">Stuart Sutcliffe</label>
-                <label>
-                    <input type="radio" name="five" value="c">Bill Wyman</label>
-                <label>
-                    <input type="radio" name="five" value="d">Pete Best</label>
+                <button id="startbutton">Start</button>
+
+                <br>
+                <br>
+
+            </div>
+
+            <br>
+
+            <div id="game_container">
+                <h1 id="timer_line">Time Remaining:
+                    <span id="timer_number">60 Seconds</span>
+                </h1>
+
+                <br>
+
+                <h3>1. Which Beatle is the oldest?</h3>
+                <input type="radio" name="q1" value="John Lennon">   John Lennon
+                <input type="radio" name="q1" value="Ringo">  Ringo
+                <input type="radio" name="q1" value="Mick Jagger">  Mick Jagger
+                <input type="radio" name="q1" value="George Martin">  George Martin
+                <br>
+                <br>
+                <h3>2. Which American televison program did The Beatles famously perform on for the first time in 1963?</h3>
+                <input type="radio" name="q2" value="America's Got Talent"> America's Got Talent
+                <input type="radio" name="q2" value="Dancing with the Stars"> Dancing with the Stars
+                <input type="radio" name="q2" value="Star Search"> Star Search
+                <input type="radio" name="q2" value="The Ed Sullivan Show"> The Ed Sullivan Show
+                <br>
+                <br>
+                <h3>3. What was the name of the song they performed on the show (from question above)?</h3>
+                <input type="radio" name="q3" value="I Want to Hold Your Hand"> I Want to Hold Your Hand
+                <input type="radio" name="q3" value="All My Loving"> All My Loving
+                <input type="radio" name="q3" value="Help!"> Help!
+                <input type="radio" name="q3" value="Satisfaction"> Satisfaction
+                <br>
+                <br>
+                <h3>4. How much did a front row ticket cost to their first concert in America?</h3>
+                <input type="radio" name="q4" value="$4"> $4
+                <input type="radio" name="q4" value="$6"> $6
+                <input type="radio" name="q4" value="$8.50"> $8.50
+                <input type="radio" name="q4" value="$12.50"> $12.50
+                <br>
+                <br>
+                <h3>5. What is the name of their original drummer?</h3>
+                <input type="radio" name="q5" value="Ringo Starr"> Ringo Starr
+                <input type="radio" name="q5" value="Stuart Sutcliffe"> Stuart Sutcliffe
+                <input type="radio" name="q5" value="Pete Best"> Pete Best
+                <input type="radio" name="q5" value="Bill Wyman"> Bill Wyman
+
+                <br>
+                <br>
+
+                <button id="done_button">Done!</button>
+
+            </div>
+
+            <div id="end_container">
+                <h1>You've successfully completed The Beatles Trivia Game</h1>
+
+                <h3>How did you do?</h3>
+
+                <br>
+
+                <h4>Correct Answers:
+                    <span id="correct_answers">0</span>
+                </h4>
+                <h4>Incorrect Answers:
+                    <span id="wrong_answers">0</span>
+                </h4>
+                <h4>Unanswered:
+                    <span id="unanswered">0</span>
+                </h4>
+                <br>
+                <h3>Nicely Done!</h3>
             </div>
         </div>
-        <input type="submit" />
-    </form>
-</div>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="assets/javascript/app.js"></script>
+
 </body>
 
 </html>
