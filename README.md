@@ -1,3 +1,3 @@
 # TriviaGame
 
-https://riddleparty.github.io/Psychic-Game/
+https://riddleparty.github.io/TriviaGame/
