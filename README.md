@@ -1,3 +1,3 @@
 # TriviaGame
 
-https://riddleparty.github.io/TriviaGame/
+https://riddlecodes.github.io/TriviaGame/
